@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en" ng-app>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="css/personal.css">
+</head>
+<body>
+<div class="container">
+  <div class="input-group">
+    <span class="input-group-addon" id="basic-addon1">Angular test:</span>
+    <input type="text" ng-model="angular" placeholder="angular is working." /><br>
+  </div>
+  <h2><span class="label label-success">{{ angular }}</span></h2>
+  <button id="myButton" type="button" class="btn btn-primary">Bootstrap button</button>
+  <div class="col-md-12" id="cartman">
+    <img class="media-object" src="images/Cartman.png" alt=""><br>
+    <h3>verily, jquery works!</h3>
+  </div>
+  <div>
+    <button id="mongobutton" type="button" class="btn btn-primary">test mongodb</button>
+    <div id="mongoresult">mongo result</div>
+  </div>
+</div>
+<script src="js/jquery-2.1.4.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/angular.min.js"></script>
+<script src="js/personal.js"></script>
+</body>
+</html>
