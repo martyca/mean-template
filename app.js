@@ -14,9 +14,13 @@ app.get('/', function(req, res, next){
 
 app.post('/', function(req, res){
   MongoClient.connect(url, function(err, db){
-    console.log(err);
-    console.log('connected to mongo database')
-    res.send("mongo database connection succesful.");
+    if(err){
+      console.log(err);
+      res.send("Unable to connect to mongo database!")
+    }else{
+      console.log('connected to mongo database')
+      res.send("mongo database connection succesful.");
+    }
   });
 });
 
